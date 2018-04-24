@@ -42,5 +42,7 @@
         "Pingecom\\Tabler\\Providers\\TablerServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
