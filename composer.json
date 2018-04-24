@@ -13,6 +13,7 @@
     "php": ">=7.0.0",
     "tabler/tabler": "^0.0.32",
     "illuminate/support": "~5.5",
+    "illuminate/auth": "~5.5",
     "lavary/laravel-menu": "^1.7",
     "laravelcollective/html":"~5.5"
   },
