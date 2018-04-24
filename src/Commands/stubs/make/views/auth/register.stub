@@ -1,0 +1,1 @@
+@extends('tabler::auth.register')
