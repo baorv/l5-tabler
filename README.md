@@ -10,9 +10,9 @@ Or add package name to require section
 ```yaml
 ...
 require: {
-	...
-	"pingecom/l5-tabler":"dev-master"
-	...
+    ...
+    "pingecom/l5-tabler":"dev-master"
+    ...
 }
 ...
 ```
@@ -27,6 +27,33 @@ If Laravel < 5.5, Add providers to list of providers in config/app.php
     ...
 ]
 ...
+```
+
+Setup middleware for menu by create new middleware named: **DefineMenu**
+
+You can read more at: https://github.com/lavary/laravel-menu
+```php
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Lavary\Menu\Facade as Menu;
+
+class DefineMenus
+{
+    public function handle($request, Closure $next)
+    {
+        Menu::make('primary', function ($menu) {
+            $menu->add('Home');
+            $menu->add('About', 'about');
+            $menu->add('Services', 'services');
+            $menu->add('Contact', 'contact');
+        });
+
+        return $next($request);
+    }
+}
 ```
 
 Publish all assets, views and others to continue.
@@ -66,20 +93,20 @@ return [
         'logout' => '',
         'profile' => '',
         'setting' => '',
-        'searchUrl' => '',
+        'search' => '',
         'homepage' => '',
         'login' => '',
+        'post-login' => '',
         'forgot' => '',
         'register' => '',
         'post-register' => '',
-        'login-url' => '',
-        'email-url' => '',
-        'reset-url' => ''
+        'post-email' => '',
+        'post-reset' => ''
     ],
     'footer' => '',
     'support' => [
         'search' => false,
-        'footerMenu' => false,
+        'footer-menu' => false,
     ]
 ];
 ```
