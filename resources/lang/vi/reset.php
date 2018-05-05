@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Fill in fields to continue',
+    'title' => 'Điền thông tin để tiếp tục',
     'email' => 'Email',
     'email-placeholder' => 'username@domain.com',
-    'send' => 'Send',
+    'send' => 'Gửi',
     'password-placeholder' => '*******',
     'password' => 'Password',
     'password-confirmation' => '*******',
-    'password-confirmation-placeholder' => 'Password confirmation',
+    'password-confirmation-placeholder' => 'Nhập lại mật khẩu',
 ];

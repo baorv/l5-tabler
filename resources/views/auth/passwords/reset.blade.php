@@ -1,6 +1,6 @@
 @extends('tabler::layouts.auth')
 @section('content')
-    {!! Form::open(['url' => url(config('tabler.url.reset-url', 'password/reset')), 'method' => 'POST', 'class' => 'card']) !!}
+    {!! Form::open(['url' => url(config('tabler.url.post-reset', 'password/reset')), 'method' => 'POST', 'class' => 'card']) !!}
     <div class="card-body p-6">
         <div class="card-title">@lang('tabler::reset.title')</div>
         <div class="form-group">

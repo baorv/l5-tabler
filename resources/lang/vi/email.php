@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Fill in fields to continue',
+    'title' => 'Điền thông tin để tiếp tục',
     'email' => 'Email',
     'email-placeholder' => 'username@domain.com',
-    'send' => 'Send'
+    'send' => 'Gửi'
 ];

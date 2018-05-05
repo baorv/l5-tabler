@@ -7,19 +7,19 @@ return [
         'logout' => '',
         'profile' => '',
         'setting' => '',
-        'searchUrl' => '',
+        'search' => '',
         'homepage' => '',
         'login' => '',
+        'post-login' => '',
         'forgot' => '',
         'register' => '',
         'post-register' => '',
-        'login-url' => '',
-        'email-url' => '',
-        'reset-url' => ''
+        'post-email' => '',
+        'post-reset' => ''
     ],
     'footer' => '',
     'support' => [
         'search' => false,
-        'footerMenu' => false,
+        'footer-menu' => false,
     ]
 ];

@@ -25,22 +25,20 @@
     <div class="page-main">
         <div class="header py-4">
             <div class="container">
-                @if(Auth::check())
-                    <div class="d-flex">
-                        <a class="header-brand" href="/">
-                            <img src="{!! config('tabler.logo') !!}" class="header-brand-img" alt="Logo">
-                        </a>
-                        <div class="d-flex order-lg-2 ml-auto">
-                            @if(Auth::check())
-                                @include('tabler::_partials.user')
-                            @endif
-                        </div>
-                        <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
-                           data-target="#headerMenuCollapse">
-                            <span class="header-toggler-icon"></span>
-                        </a>
+                <div class="d-flex">
+                    <a class="header-brand" href="{!! url(config('tabler.urls.homepage', '/')) !!}">
+                        <img src="{!! config('tabler.logo') !!}" class="header-brand-img" alt="Logo">
+                    </a>
+                    <div class="d-flex order-lg-2 ml-auto">
+                        @if(Auth::check())
+                            @include('tabler::_partials.user')
+                        @endif
                     </div>
-                @endif
+                    <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
+                       data-target="#headerMenuCollapse">
+                        <span class="header-toggler-icon"></span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
@@ -77,7 +75,7 @@
             </div>
         </div>
     </div>
-    @if(config('tabler.support.footerMenu'))
+    @if(config('tabler.support.footer-menu'))
         <div class="footer">
             <div class="container">
                 <div class="row">

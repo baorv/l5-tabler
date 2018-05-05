@@ -18,13 +18,13 @@
     <script src="{{ asset('admin/assets/js/dashboard.js') }}"></script>
     @stack('scripts')
 </head>
-<body class="">
+<body>
 <div class="page">
     <div class="page-main">
         <div class="header py-4">
             <div class="container">
                 <div class="d-flex">
-                    <a class="header-brand" href="{!! config('tabler.urls.homepage') !!}">
+                    <a class="header-brand" href="{!! url(config('tabler.urls.homepage', '/')) !!}">
                         <img src="{!! config('tabler.logo') !!}" class="header-brand-img" alt="Logo">
                     </a>
                     <div class="d-flex order-lg-2 ml-auto">
@@ -63,15 +63,21 @@
         <div class="my-3 my-md-5">
         </div>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                @if(Menu::exists('footer'))
-                    @include('tabler::_partials.footer-menu')
-                @endif
+    @if(config('tabler.support.footer-menu'))
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            @if(Menu::exists('footer'))
+                                @include('tabler::_partials.footer-menu')
+                            @endif
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    @endif
     <footer class="footer">
         <div class="container">
             <div class="row align-items-center flex-row-reverse">

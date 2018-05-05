@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Login to your account',
+    'title' => 'Fill all fields to continue',
     'email' => 'Email',
     'email-placeholder' => 'username@domain.com',
     'password' => 'Password',
