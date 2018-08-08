@@ -5,7 +5,7 @@
         <div class="card-title">@lang('tabler::login.title')</div>
         <div class="form-group">
             {!! Form::label('email', trans('tabler::login.email'), ['class' => 'form-label']) !!}
-            {!! Form::email('email', old('email'), ['placeholder' => trans('tabler::login.email-placeholder'), 'class' => 'form-control']) !!}
+            {!! Form::email('email', old('email'), ['placeholder' => trans('tabler::login.email-placeholder'), 'class' => 'form-control', 'autofocus' => true]) !!}
         </div>
         <div class="form-group">
             <label class="form-label" for="password">

@@ -3,13 +3,14 @@
 return [
     'title' => 'Fill in fields to continue',
     'name-placeholder' => 'Your fullname',
-    'email' => 'username@domain.com',
-    'email-placeholder' => 'Your email',
+    'email' => 'Your email',
+    'email-placeholder' => 'username@domain.com',
     'password' => 'Password',
     'password-placeholder' => '********',
     'password-confirmation' => 'Password confirmation',
     'password-confirmation-placeholder' => '********',
     'singup' => 'Signup',
     'login' => 'Signin',
-    'have-account' => 'Have account?'
+    'have-account' => 'Have account?',
+    'name' => 'Fullname',
 ];

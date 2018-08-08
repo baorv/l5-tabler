@@ -1,7 +1,11 @@
 # l5-tabler
+
+![Tabler preview](https://tabler.github.io/assets/images/dashboard.png)
+
 Tabler admin template for Laravel 5
 
 ## Installation
+
 Run composer for installing package
 ```bash
 composer require "pingecom/l5-tabler":"dev-master"
@@ -54,6 +58,17 @@ class DefineMenus
         return $next($request);
     }
 }
+```
+
+Add middleware to middleware list
+```php
+protected $middlewareGroups = [
+    'web' => [
+        ...,
+        \App\Http\Middleware\DefineMenus::class,
+    ],
+    ...
+]
 ```
 
 Publish all assets, views and others to continue.
@@ -113,6 +128,18 @@ return [
 Customize views, open resources/views/vendor/tabler to customization
 Customize assets, open public/admin/assets
 
-## TODOS
+## Documentation
+
+For full documentation, visit [tabler.github.io/tabler/docs](https://tabler.github.io/tabler/docs/index.html).
+
+## LICENSE
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Issues
+
+If you have any issue, please [create new issue](https://github.com/roanvanbao/l5-tabler/issues/new)
 
 ## Contributors
+
+## TODOS

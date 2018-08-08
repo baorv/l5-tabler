@@ -1,23 +1,23 @@
 <?php
 
 return [
-    'suffix' => '',
-    'logo' => '',
+    'suffix' => 'Tabler',
+    'logo' => 'https://tabler.github.io/tabler/demo/brand/tabler.svg',
     'urls' => [
-        'logout' => '',
-        'profile' => '',
-        'setting' => '',
-        'search' => '',
-        'homepage' => '',
-        'login' => '',
-        'post-login' => '',
-        'forgot' => '',
-        'register' => '',
-        'post-register' => '',
-        'post-email' => '',
-        'post-reset' => ''
+        'logout' => 'logout',
+        'profile' => 'profile',
+        'setting' => 'setting',
+        'search' => 'search',
+        'homepage' => '/',
+        'login' => 'login',
+        'post-login' => 'login',
+        'forgot' => 'password/reset',
+        'register' => 'register',
+        'post-register' => 'register',
+        'post-email' => 'password/email',
+        'post-reset' => 'password/reset'
     ],
-    'footer' => '',
+    'footer' => 'Copyright © 2018 Tabler. Theme by codecalm.net All rights reserved.',
     'support' => [
         'search' => false,
         'footer-menu' => false,

@@ -11,5 +11,6 @@ return [
     'password-confirmation-placeholder' => '********',
     'singup' => 'Đăng ký',
     'login' => 'Đăng nhập',
-    'have-account' => 'Bạn có tài khoản?'
+    'have-account' => 'Bạn có tài khoản?',
+    'name' => 'Họ tên',
 ];
