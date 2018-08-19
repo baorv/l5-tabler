@@ -6,7 +6,7 @@ return [
     'urls' => [
         'logout' => 'logout',
         'profile' => 'profile',
-        'setting' => 'setting',
+        'settings' => 'settings',
         'search' => 'search',
         'homepage' => '/',
         'login' => 'login',
