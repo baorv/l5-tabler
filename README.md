@@ -8,14 +8,14 @@ Tabler admin template for Laravel 5
 
 Run composer for installing package
 ```bash
-composer require "pingecom/l5-tabler":"dev-master"
+composer require "pingecom/l5-tabler":"~1.0.0"
 ```
 Or add package name to require section
 ```yaml
 ...
 require: {
     ...
-    "pingecom/l5-tabler":"dev-master"
+    "pingecom/l5-tabler":"~1.0.0"
     ...
 }
 ...
@@ -102,23 +102,23 @@ Open tabler.php in config/tabler.php, you can customize some URL, logo, suffix
 
 ```php
 return [
-    'suffix' => '',
-    'logo' => '',
+    'suffix' => 'Tabler',
+    'logo' => 'https://tabler.github.io/tabler/demo/brand/tabler.svg',
     'urls' => [
-        'logout' => '',
-        'profile' => '',
-        'setting' => '',
-        'search' => '',
-        'homepage' => '',
-        'login' => '',
-        'post-login' => '',
-        'forgot' => '',
-        'register' => '',
-        'post-register' => '',
-        'post-email' => '',
-        'post-reset' => ''
+        'logout' => 'logout',
+        'profile' => 'profile',
+        'settings' => 'settings',
+        'search' => 'search',
+        'homepage' => '/',
+        'login' => 'login',
+        'post-login' => 'login',
+        'forgot' => 'password/reset',
+        'register' => 'register',
+        'post-register' => 'register',
+        'post-email' => 'password/email',
+        'post-reset' => 'password/reset'
     ],
-    'footer' => '',
+    'footer' => 'Copyright © 2018 Tabler. Theme by codecalm.net All rights reserved.',
     'support' => [
         'search' => false,
         'footer-menu' => false,
