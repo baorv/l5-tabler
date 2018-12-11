@@ -1,6 +1,6 @@
 # l5-tabler
 
-![Tabler preview](https://tabler.github.io/assets/images/dashboard.png)
+![Tabler preview](preview.png)
 
 Tabler admin template for Laravel 5
 
