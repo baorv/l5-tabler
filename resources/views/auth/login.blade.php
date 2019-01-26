@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
             <label class="custom-control custom-checkbox">
-                {!! Form::checkbox('remember', null) !!}
+                {!! Form::checkbox('remember', null, false, ['class' => 'custom-control-input']) !!}
                 <span class="custom-control-label">@lang('tabler::login.remeber-me')</span>
             </label>
         </div>
