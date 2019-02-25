@@ -6,11 +6,14 @@ Tabler admin template for Laravel 5
 
 ## Installation
 
-Run composer for installing package
+Run composer for installing package:
+
 ```bash
 composer require "pingecom/l5-tabler":"~1.0.0"
 ```
-Or add package name to require section
+
+Or add package name to require section:
+
 ```yaml
 ...
 require: {
@@ -21,7 +24,7 @@ require: {
 ...
 ```
 
-If Laravel < 5.5, Add providers to list of providers in config/app.php
+If Laravel < 5.5, Add a provider to the list of providers in `config/app.php`
 
 ```php
 ...
@@ -33,9 +36,10 @@ If Laravel < 5.5, Add providers to list of providers in config/app.php
 ...
 ```
 
-Setup middleware for menu by create new middleware named: **DefineMenu**
+Setup the middleware for menu by create a new middleware named: **DefineMenu**
 
 You can read more at: https://github.com/lavary/laravel-menu
+
 ```php
 <?php
 
@@ -60,7 +64,8 @@ class DefineMenus
 }
 ```
 
-Add middleware to middleware list
+Add a middleware to the middleware list
+
 ```php
 protected $middlewareGroups = [
     'web' => [
@@ -79,7 +84,7 @@ php artisan vendor:publish --provider="Pingecom\Tabler\Providers\TablerServicePr
 
 ## Usage
 
-Creating authentication pages
+Create authentication pages
 
 ```php
 php artisan make:tabler 
@@ -145,7 +150,7 @@ To use tabler plugins, such as: [charts](https://tabler.io/tabler/charts.html), 
 
 ## Customization
 
-Open tabler.php in config/tabler.php, you can customize some URL, logo, suffix
+Open `tabler.php` in `config/tabler.php`, you can customize some URL, logo, suffix
 
 ```php
 return [
@@ -172,8 +177,8 @@ return [
     ]
 ];
 ```
-Customize views, open resources/views/vendor/tabler to customization
-Customize assets, open public/admin/assets
+Customize views, open `resources/views/vendor/tabler` to customize
+Customize assets, open `public/admin/assets`
 
 ## Documentation
 
