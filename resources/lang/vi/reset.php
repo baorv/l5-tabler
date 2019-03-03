@@ -5,8 +5,8 @@ return [
     'email' => 'Email',
     'email-placeholder' => 'username@domain.com',
     'send' => 'Gửi',
-    'password-placeholder' => '*******',
     'password' => 'Password',
-    'password-confirmation' => '*******',
-    'password-confirmation-placeholder' => 'Nhập lại mật khẩu',
+    'password-placeholder' => '*******',
+    'password-confirmation' => 'Nhập lại mật khẩu',
+    'password-confirmation-placeholder' => '*******',
 ];
